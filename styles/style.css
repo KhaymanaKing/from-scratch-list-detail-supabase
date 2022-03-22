@@ -43,6 +43,7 @@ main {
     background-image: url(../assets/background.png);
     background-repeat: no-repeat;
     background-size: 3814.5px, 2225.77px;
+    
 
 }
 
@@ -57,7 +58,10 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
     
 }
 
@@ -103,11 +107,18 @@ div.dnd-classes{
     flex-wrap: wrap;
     background-color: brown;
     justify-content: center;
+    box-shadow: var(--shadow);
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    
 
 
 }
 section.main-section{
     background-color: brown;
+    
 }
 div.dnd-classes img{
     width: 400px;
