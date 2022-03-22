@@ -8,10 +8,21 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 1) **Make a drawing of your app. Simple "wireframes"** 
 1) **Look at the drawing and name the HTML elements you'll need to realize your vision**
+ a div for the content the rest will be rendered
+ search bar
+ search button
+ website connection in HTML
 1) **Look at the drawing and imagine using the app. What _state_ do you need to track?** 
+array for the list so can search via frontend instead of hitting supabase everytime
 1) **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")** 
+div: for the content
+search bar: to search
+button: to press search
+website connection: wont be able to pull data from supabase w/o
 1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
+async function that pulls and renders data from supabase
 1) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change? Does any DOM update?**
+onload and submit
 1) **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
 1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
 
