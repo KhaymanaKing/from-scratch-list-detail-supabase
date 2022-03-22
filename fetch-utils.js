@@ -9,3 +9,14 @@ export async function getDnDClasses() {
         .select('*');
     return data.body;
 }
+
+export async function getDnDClassByID(id){
+    const data = await client
+        .from ('dndclasses')
+        .select('*')
+        .match({ id : id })
+        .single();
+
+    return data.body;
+
+}
