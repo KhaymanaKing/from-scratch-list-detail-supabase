@@ -29,8 +29,6 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
-    background-image: url(../assets/background.png);
-    background-repeat: no-repeat;
     background-size: 110%;
     background-position: center;
     background-color: rgb(43, 41, 41);
@@ -41,7 +39,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    text-align: left;
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: 3814.5px, 2225.77px;
 
 }
 
@@ -56,7 +57,8 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+
+    
 }
 
 header {
@@ -84,7 +86,6 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
 footer {
     position: fixed;
     width: 100%;
@@ -94,4 +95,43 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+div.dnd-classes{    
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
+    justify-content: center;
+
+
+}
+section.main-section{
+    background-color: brown;
+}
+div.dnd-classes img{
+    width: 400px;
+    height: 475px;
+    background-image: url(../assets/pictureborderbackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    background-color: black;
+    
+
+    
+    
+}
+.dndclass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+    
 }

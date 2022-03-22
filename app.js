@@ -1,5 +1,6 @@
 // import functions and grab DOM elements\
-import {getDnDClass } from './fetch-utils.js';
+import { getDnDClasses } from './fetch-utils.js';
+import { renderClasses } from './render-utils.js';
 
 // let state
 
@@ -9,7 +10,7 @@ import {getDnDClass } from './fetch-utils.js';
   // update DOM to reflect the new state
 
 
-const listEl = document.querySelector();
+const listEl = document.querySelector('.dnd-classes');
 
 window.addEventListener('load', async () => {
     fetchAndDisplayClasses();
@@ -17,10 +18,10 @@ window.addEventListener('load', async () => {
 
 async function fetchAndDisplayClasses(){
 
-    const dndClasses = await getDnDClass();
+    const dndClasses = await getDnDClasses();
     for (let dndClass of dndClasses) {
 
         const dndClassEl = renderClasses(dndClass);
         listEl.append(dndClassEl);
-}
+    }
 }

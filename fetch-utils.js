@@ -3,9 +3,9 @@ const SUPABASE_URL = 'https://iogrfcwglwniswuilfsw.supabase.co';
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-export async function getDnDClass() {
+export async function getDnDClasses() {
     const data = await client
-        .from ('classes')
+        .from ('dndclasses')
         .select('*');
     return data.body;
 }
