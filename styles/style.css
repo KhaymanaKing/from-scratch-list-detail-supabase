@@ -58,9 +58,7 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border-bottom-left-radius: 100%;
-    border-top-right-radius: 100%;
-    border-top-left-radius: 100%;
+    border-top-right-radius: 30%;
     border-bottom-right-radius: 100%;
     
 }
@@ -108,9 +106,7 @@ div.dnd-classes{
     background-color: brown;
     justify-content: center;
     box-shadow: var(--shadow);
-    border-bottom-left-radius: 100%;
-    border-top-right-radius: 100%;
-    border-top-left-radius: 100%;
+    border-top-right-radius: 30%;
     border-bottom-right-radius: 100%;
     
 

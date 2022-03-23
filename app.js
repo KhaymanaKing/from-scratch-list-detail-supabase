@@ -14,6 +14,7 @@ const listEl = document.querySelector('.dnd-classes');
 
 window.addEventListener('load', async () => {
     fetchAndDisplayClasses();
+    
 });
 
 async function fetchAndDisplayClasses(){
@@ -24,4 +25,5 @@ async function fetchAndDisplayClasses(){
         const dndClassEl = renderClasses(dndClass);
         listEl.append(dndClassEl);
     }
+    
 }

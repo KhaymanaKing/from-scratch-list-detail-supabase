@@ -1,10 +1,10 @@
 import { getDnDClassByID } from '../fetch-utils.js';
-
-const dndClassDetailEl = document.querySelector('.');
+import { renderDnDClassDetail } from '../render-utils.js';
+const dndClassDetailEl = document.querySelector('.dnd-classes-particular');
 
 window.addEventListener('load', async () =>{
 
-    cosnt data = new URLSearchParams(window.location.search);
+    const data = new URLSearchParams(window.location.search);
     const dndClassId = data.get('id');
 
     const dndClass = await getDnDClassByID(dndClassId);
@@ -12,4 +12,4 @@ window.addEventListener('load', async () =>{
     const dndClassEl = renderDnDClassDetail(dndClass);
 
     dndClassDetailEl.append(dndClassEl);
-})
+});
