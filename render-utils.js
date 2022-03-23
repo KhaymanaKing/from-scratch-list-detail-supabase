@@ -28,10 +28,10 @@ export function renderDnDClassDetail(dndClass){
     
     dndParticularclass.textContent = dndClass.dndclass;
     descriptionEl.textContent = dndClass.description;
-    mainStatsEl.textContent = dndClass.mainstats;
-    hitDiceEl.textContent = dndClass.hitdice;
-    startHPEl.textContent = dndClass.startinghp;
-    armorEl.textContent = dndClass.armorproficiencies;
+    mainStatsEl.textContent = `Main stats: ${dndClass.mainstats}`;
+    hitDiceEl.textContent = `Hit Die ${dndClass.hitdice}`;
+    startHPEl.textContent = `Starting HP: ${dndClass.startinghp}`;
+    armorEl.textContent = `Armor proficiences: ${dndClass.armorproficiencies}`;
     dndClassImg.src = dndClass.img;
 
     dndparticularClassEl.append(
